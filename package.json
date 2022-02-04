@@ -3,6 +3,10 @@
   "version": "13.1.3-post",
   "description": "A high-level API to control headless Chrome over the DevTools Protocol",
   "main": "./cjs-entry.js",
+  "exports": {
+    "import": "./lib/esm/puppeteer/node.js",
+    "require": "./cjs-entry.js"
+  },
   "types": "lib/types.d.ts",
   "repository": "github:puppeteer/puppeteer",
   "engines": {
